@@ -20,13 +20,19 @@ export function TransactionForm() {
     setAmount(0)
   };
 
+  const handleTextChange = (e) => {
+    const valor = e.target.value.replace(/[0-9]/g, '');
+    setText(valor);
+  };
+
   return (
     <div>
       <form onSubmit={onSubmit}>
           <input
             type="text"
+            step="tex"
             placeholder="Enter a Description"
-            onChange={(e) => setText(e.target.value)}
+            onChange={handleTextChange}
             className="bg-zinc-600 text-white px-3 py-2 rounded-lg block mb-2 w-full"
             value={text}
           />

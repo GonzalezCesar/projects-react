@@ -6,6 +6,8 @@ import { TransactionItem } from './TransactionItem'
 export function TransactionList(){
     const { transactions} = useContext(GlobalContext)
 
+
+    
     return (
         <>
         <div className='bg-zinc-900 p-2'>
