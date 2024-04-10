@@ -8,12 +8,16 @@ export function TransactionList(){
 
     return (
         <>
-        <h3 className='text-slate-300 text-xl font-bold w-full'>History</h3>
-        <ul>
-            {transactions.map((transaction) => (
-                <TransactionItem transaction={transaction} key={transaction.id} />
-            ))}
-        </ul>
+        <div className='bg-zinc-900 p-2'>
+            <h3 className='text-slate-300 text-xl text-center font-bold w-full mt-2'>History</h3>
+            <div className='h-[130px] overflow-auto'>
+                <ul>
+                    {transactions.map((transaction) => (
+                        <TransactionItem transaction={transaction} key={transaction.id} />
+                    ))}
+                </ul>
+            </div>
+        </div>
         </>
     )
 }

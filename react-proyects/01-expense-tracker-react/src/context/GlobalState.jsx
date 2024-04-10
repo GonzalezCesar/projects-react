@@ -9,7 +9,7 @@ export const GlobalContext = createContext(initialState);
 
 export const GlobalProvider = ({ children }) => {
     const [state, dispatch] = useReducer(AppReducer, initialState, 
-        () => {
+    () => {
             const localData = localStorage.getItem ('transactions');
             return localData ? JSON.parse(localData) : initialState
         })

@@ -24,7 +24,7 @@ export function ExpenseChart() {
   if (totalIncomes === 0 && totalExpenses === 0) {
     return (
       <div className="bg-zinc-900 p-4 my-2">
-        <div className="h-full flex items-center justify-center w-full flex-col">
+        <div className="h-full flex items-center justify-center w-full flex-col ">
           <h1 className="text-3xl font-bold my-2">No data yet</h1>
         </div>
       </div>

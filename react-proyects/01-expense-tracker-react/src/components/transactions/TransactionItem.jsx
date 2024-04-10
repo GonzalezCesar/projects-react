@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { GlobalContext } from "../../context/GlobalState";
+import { IoTrashOutline } from "react-icons/io5";
 
 export function TransactionItem({ transaction }) {
     const { deleteTransaction } = useContext(GlobalContext)
@@ -13,8 +14,10 @@ export function TransactionItem({ transaction }) {
             onClick={() => {
             deleteTransaction(transaction.id);
             }}
+            className="ml-2"
         >
-            x
+            <IoTrashOutline />
+
         </button>
       </div>
     </li>
