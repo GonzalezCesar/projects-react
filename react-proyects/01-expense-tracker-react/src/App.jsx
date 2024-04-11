@@ -11,8 +11,8 @@ function App() {
   return (
     <GlobalProvider>
       <div className='bg-zinc-950 text-white h-screen flex justify-center items-center'>
-        <div className='container mx-auto w-2/5'>
-          <div className='bg-zinc-800 p-10  rounded-lg w-full'>
+        <div className='md:container md:mx-auto md:w-2/5'>
+          <div className='bg-zinc-800 p-10 rounded-lg'>
               <Header />
             <div className='flex flex-col md:flex-row justify-between gap-4'>
               <div className='flex-1'>
